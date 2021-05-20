@@ -4,12 +4,14 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import "bootstrap/dist/css/bootstrap.css";
-import CreateCarousel from "./components/carousel";
+import CreateCarousel from "./components/carousel/carousel";
+import CarouselV2 from "./components/carousel V2/carousel";
 
 ReactDOM.render(
   <React.StrictMode>
     <CreateCarousel />
     <App />
+    {/* <CarouselV2 /> */}
   </React.StrictMode>,
   document.getElementById("root")
 );
