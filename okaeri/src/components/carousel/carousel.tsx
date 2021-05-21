@@ -6,7 +6,7 @@ import Carousel, { arrowsPlugin } from "@brainhubeu/react-carousel";
 import "@brainhubeu/react-carousel/lib/style.css";
 import { FaArrowCircleRight, FaArrowCircleLeft } from "react-icons/fa";
 
-class CreateCarousel extends Component<{}, {}> {
+class CreateCarousel extends Component {
   state = {
     value: 0,
     slides: carouselData.map((slide, index) => {
@@ -19,7 +19,7 @@ class CreateCarousel extends Component<{}, {}> {
 
   render() {
     return (
-      <div>
+      <div className="fill">
         <section className="carousel">
           <Carousel
             plugins={[
@@ -52,4 +52,3 @@ class CreateCarousel extends Component<{}, {}> {
 }
 
 export default CreateCarousel;
-//test

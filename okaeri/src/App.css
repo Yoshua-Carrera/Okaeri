@@ -46,37 +46,61 @@
 }
 
 .image {
-  width: 45%;
-  border-radius: 10px;
-  object-fit: fill;
-  margin: 10px;
+  display: inline-block;
+  width: 30%;
+  border-radius: 0px;
+  object-fit: contain;
+  margin: 0px;
+  padding: 1px;
+  object-fit: cover;
+  background-size: contain;
+  max-height: fit-content;
+  justify-content: center;
 }
 
 .leftArrow {
-  position: absolute;
+  position: relative;
   left: 32px;
   top: 50%;
   color: #000;
-  width: 10%;
-  height: 10%;
+  width: 80px;
+  height: 80px;
   z-index: 10;
   cursor: pointer;
   user-select: none;
+  align-items: center;
 }
 
 .rightArrow {
-  position: absolute;
+  position: relative;
   right: 32px;
   top: 50%;
   color: #000;
-  width: 10%;
-  height: 10%;
+  width: 80px;
+  height: 80px;
   z-index: 10;
   cursor: pointer;
   user-select: none;
+  align-items: center;
 }
 
 .carousel {
   z-index: 0;
-  position: absolute;
+  position: relative;
+  height: auto;
+  min-height: 100% !important;
+}
+
+.fill {
+  display: flexbox;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  color: #000;
+}
+
+.carousel img {
+  flex-shrink: 50%;
+  /* min-width: 40%; */
+  min-height: 100%;
 }
